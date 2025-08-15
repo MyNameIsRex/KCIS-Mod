@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "kcisdeco:block/framed_window_disconnected_fogged",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "kcisdeco:block/framed_window_disconnected_fogged"
+    },
+    "facing=south": {
+      "model": "kcisdeco:block/framed_window_disconnected_fogged",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "kcisdeco:block/framed_window_disconnected_fogged",
+      "y": 270
+    }
+  }
+}

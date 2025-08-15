@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,horizontal_half=left": {
+      "model": "kcisdeco:block/florescent_light_double_fenced_left",
+      "y": 90
+    },
+    "facing=east,horizontal_half=right": {
+      "model": "kcisdeco:block/florescent_light_double_fenced_right",
+      "y": 90
+    },
+    "facing=north,horizontal_half=left": {
+      "model": "kcisdeco:block/florescent_light_double_fenced_left"
+    },
+    "facing=north,horizontal_half=right": {
+      "model": "kcisdeco:block/florescent_light_double_fenced_right"
+    },
+    "facing=south,horizontal_half=left": {
+      "model": "kcisdeco:block/florescent_light_double_fenced_left",
+      "y": 180
+    },
+    "facing=south,horizontal_half=right": {
+      "model": "kcisdeco:block/florescent_light_double_fenced_right",
+      "y": 180
+    },
+    "facing=west,horizontal_half=left": {
+      "model": "kcisdeco:block/florescent_light_double_fenced_left",
+      "y": 270
+    },
+    "facing=west,horizontal_half=right": {
+      "model": "kcisdeco:block/florescent_light_double_fenced_right",
+      "y": 270
+    }
+  }
+}

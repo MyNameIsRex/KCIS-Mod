@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "kcisdeco:block/cabinet",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "kcisdeco:block/cabinet"
+    },
+    "facing=south": {
+      "model": "kcisdeco:block/cabinet",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "kcisdeco:block/cabinet",
+      "y": 270
+    }
+  }
+}

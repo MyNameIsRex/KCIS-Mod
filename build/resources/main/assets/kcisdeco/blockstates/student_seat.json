@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "kcisdeco:block/student_seat",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "kcisdeco:block/student_seat"
+    },
+    "facing=south": {
+      "model": "kcisdeco:block/student_seat",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "kcisdeco:block/student_seat",
+      "y": 270
+    }
+  }
+}

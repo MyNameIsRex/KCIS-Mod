@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "kcisdeco:block/locker",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "kcisdeco:block/locker"
+    },
+    "facing=south": {
+      "model": "kcisdeco:block/locker",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "kcisdeco:block/locker",
+      "y": 270
+    }
+  }
+}

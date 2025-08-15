@@ -1,0 +1,244 @@
+{
+  "variants": {
+    "facing=east,north=false,east=false,south=false,west=false,up=false,down=false": {
+      "model": "kcisdeco:block/framed_window_disconnected",
+      "y": 90
+    },
+    "facing=east,north=true,east=false,south=false,west=false,up=false,down=false": {
+      "model": "kcisdeco:block/framed_window_left",
+      "y": 90
+    },
+    "facing=east,north=false,east=false,south=true,west=false,up=false,down=false": {
+      "model": "kcisdeco:block/framed_window_right",
+      "y": 90
+    },
+    "facing=east,north=false,east=false,south=false,west=false,up=false,down=true": {
+      "model": "kcisdeco:block/framed_window_top",
+      "y": 90
+    },
+    "facing=east,north=false,east=false,south=false,west=false,up=true,down=false": {
+      "model": "kcisdeco:block/framed_window_bottom",
+      "y": 90
+    },
+    "facing=east,north=true,east=false,south=false,west=false,up=true,down=false": {
+      "model": "kcisdeco:block/framed_window_left_bottom",
+      "y": 90
+    },
+    "facing=east,north=false,east=false,south=true,west=false,up=true,down=false": {
+      "model": "kcisdeco:block/framed_window_right_bottom",
+      "y": 90
+    },
+    "facing=east,north=true,east=false,south=false,west=false,up=false,down=true": {
+      "model": "kcisdeco:block/framed_window_left_top",
+      "y": 90
+    },
+    "facing=east,north=false,east=false,south=true,west=false,up=false,down=true": {
+      "model": "kcisdeco:block/framed_window_right_top",
+      "y": 90
+    },
+    "facing=east,north=true,east=false,south=true,west=false,up=true,down=false": {
+      "model": "kcisdeco:block/framed_window_edge_bottom",
+      "y": 90
+    },
+    "facing=east,north=true,east=false,south=true,west=false,up=false,down=true": {
+      "model": "kcisdeco:block/framed_window_edge_top",
+      "y": 90
+    },
+    "facing=east,north=true,east=false,south=false,west=false,up=true,down=true": {
+      "model": "kcisdeco:block/framed_window_edge_left",
+      "y": 90
+    },
+    "facing=east,north=false,east=false,south=true,west=false,up=true,down=true": {
+      "model": "kcisdeco:block/framed_window_edge_right",
+      "y": 90
+    },
+    "facing=east,north=true,east=false,south=true,west=false,up=false,down=false": {
+      "model": "kcisdeco:block/framed_window_horizontal",
+      "y": 90
+    },
+    "facing=east,north=false,east=false,south=false,west=false,up=true,down=true": {
+      "model": "kcisdeco:block/framed_window_vertical",
+      "y": 90
+    },
+    "facing=east,north=true,east=false,south=true,west=false,up=true,down=true": {
+      "model": "kcisdeco:block/framed_window_surrounded",
+      "y": 90
+    },
+    "facing=north,north=false,east=false,south=false,west=false,up=false,down=false": {
+      "model": "kcisdeco:block/framed_window_disconnected"
+    },
+    "facing=north,north=false,east=false,south=false,west=true,up=false,down=false": {
+      "model": "kcisdeco:block/framed_window_left"
+    },
+    "facing=north,north=false,east=true,south=false,west=false,up=false,down=false": {
+      "model": "kcisdeco:block/framed_window_right"
+    },
+    "facing=north,north=false,east=false,south=false,west=false,up=false,down=true": {
+      "model": "kcisdeco:block/framed_window_top"
+    },
+    "facing=north,north=false,east=false,south=false,west=false,up=true,down=false": {
+      "model": "kcisdeco:block/framed_window_bottom"
+    },
+    "facing=north,north=false,east=false,south=false,west=true,up=true,down=false": {
+      "model": "kcisdeco:block/framed_window_left_bottom"
+    },
+    "facing=north,north=false,east=true,south=false,west=false,up=true,down=false": {
+      "model": "kcisdeco:block/framed_window_right_bottom"
+    },
+    "facing=north,north=false,east=false,south=false,west=true,up=false,down=true": {
+      "model": "kcisdeco:block/framed_window_left_top"
+    },
+    "facing=north,north=false,east=true,south=false,west=false,up=false,down=true": {
+      "model": "kcisdeco:block/framed_window_right_top"
+    },
+    "facing=north,north=false,east=true,south=false,west=true,up=true,down=false": {
+      "model": "kcisdeco:block/framed_window_edge_bottom"
+    },
+    "facing=north,north=false,east=true,south=false,west=true,up=false,down=true": {
+      "model": "kcisdeco:block/framed_window_edge_top"
+    },
+    "facing=north,north=false,east=false,south=false,west=true,up=true,down=true": {
+      "model": "kcisdeco:block/framed_window_edge_left"
+    },
+    "facing=north,north=false,east=true,south=false,west=false,up=true,down=true": {
+      "model": "kcisdeco:block/framed_window_edge_right"
+    },
+    "facing=north,north=false,east=true,south=false,west=true,up=false,down=false": {
+      "model": "kcisdeco:block/framed_window_horizontal"
+    },
+    "facing=north,north=false,east=false,south=false,west=false,up=true,down=true": {
+      "model": "kcisdeco:block/framed_window_vertical"
+    },
+    "facing=north,north=false,east=true,south=false,west=true,up=true,down=true": {
+      "model": "kcisdeco:block/framed_window_surrounded"
+    },
+    "facing=south,north=false,east=false,south=false,west=false,up=false,down=false": {
+      "model": "kcisdeco:block/framed_window_disconnected",
+      "y": 180
+    },
+    "facing=south,north=false,east=true,south=false,west=false,up=false,down=false": {
+      "model": "kcisdeco:block/framed_window_left",
+      "y": 180
+    },
+    "facing=south,north=false,east=false,south=false,west=true,up=false,down=false": {
+      "model": "kcisdeco:block/framed_window_right",
+      "y": 180
+    },
+    "facing=south,north=false,east=false,south=false,west=false,up=false,down=true": {
+      "model": "kcisdeco:block/framed_window_top",
+      "y": 180
+    },
+    "facing=south,north=false,east=false,south=false,west=false,up=true,down=false": {
+      "model": "kcisdeco:block/framed_window_bottom",
+      "y": 180
+    },
+    "facing=south,north=false,east=true,south=false,west=false,up=true,down=false": {
+      "model": "kcisdeco:block/framed_window_left_bottom",
+      "y": 180
+    },
+    "facing=south,north=false,east=false,south=false,west=true,up=true,down=false": {
+      "model": "kcisdeco:block/framed_window_right_bottom",
+      "y": 180
+    },
+    "facing=south,north=false,east=true,south=false,west=false,up=false,down=true": {
+      "model": "kcisdeco:block/framed_window_left_top",
+      "y": 180
+    },
+    "facing=south,north=false,east=false,south=false,west=true,up=false,down=true": {
+      "model": "kcisdeco:block/framed_window_right_top",
+      "y": 180
+    },
+    "facing=south,north=false,east=true,south=false,west=true,up=true,down=false": {
+      "model": "kcisdeco:block/framed_window_edge_bottom",
+      "y": 180
+    },
+    "facing=south,north=false,east=true,south=false,west=true,up=false,down=true": {
+      "model": "kcisdeco:block/framed_window_edge_top",
+      "y": 180
+    },
+    "facing=south,north=false,east=true,south=false,west=false,up=true,down=true": {
+      "model": "kcisdeco:block/framed_window_edge_left",
+      "y": 180
+    },
+    "facing=south,north=false,east=false,south=false,west=true,up=true,down=true": {
+      "model": "kcisdeco:block/framed_window_edge_right",
+      "y": 180
+    },
+    "facing=south,north=false,east=true,south=false,west=true,up=false,down=false": {
+      "model": "kcisdeco:block/framed_window_horizontal",
+      "y": 180
+    },
+    "facing=south,north=false,east=false,south=false,west=false,up=true,down=true": {
+      "model": "kcisdeco:block/framed_window_vertical",
+      "y": 180
+    },
+    "facing=south,north=false,east=true,south=false,west=true,up=true,down=true": {
+      "model": "kcisdeco:block/framed_window_surrounded",
+      "y": 180
+    },
+    "facing=west,north=false,east=false,south=false,west=false,up=false,down=false": {
+      "model": "kcisdeco:block/framed_window_disconnected",
+      "y": 270
+    },
+    "facing=west,north=false,east=false,south=true,west=false,up=false,down=false": {
+      "model": "kcisdeco:block/framed_window_left",
+      "y": 270
+    },
+    "facing=west,north=true,east=false,south=false,west=false,up=false,down=false": {
+      "model": "kcisdeco:block/framed_window_right",
+      "y": 270
+    },
+    "facing=west,north=false,east=false,south=false,west=false,up=false,down=true": {
+      "model": "kcisdeco:block/framed_window_top",
+      "y": 270
+    },
+    "facing=west,north=false,east=false,south=false,west=false,up=true,down=false": {
+      "model": "kcisdeco:block/framed_window_bottom",
+      "y": 270
+    },
+    "facing=west,north=false,east=false,south=true,west=false,up=true,down=false": {
+      "model": "kcisdeco:block/framed_window_left_bottom",
+      "y": 270
+    },
+    "facing=west,north=true,east=false,south=false,west=false,up=true,down=false": {
+      "model": "kcisdeco:block/framed_window_right_bottom",
+      "y": 270
+    },
+    "facing=west,north=false,east=false,south=true,west=false,up=false,down=true": {
+      "model": "kcisdeco:block/framed_window_left_top",
+      "y": 270
+    },
+    "facing=west,north=true,east=false,south=false,west=false,up=false,down=true": {
+      "model": "kcisdeco:block/framed_window_right_top",
+      "y": 270
+    },
+    "facing=west,north=true,east=false,south=true,west=false,up=false,down=true": {
+      "model": "kcisdeco:block/framed_window_edge_top",
+      "y": 270
+    },
+    "facing=west,north=true,east=false,south=true,west=false,up=true,down=false": {
+      "model": "kcisdeco:block/framed_window_edge_bottom",
+      "y": 270
+    },
+    "facing=west,north=false,east=false,south=true,west=false,up=true,down=true": {
+      "model": "kcisdeco:block/framed_window_edge_left",
+      "y": 270
+    },
+    "facing=west,north=true,east=false,south=false,west=false,up=true,down=true": {
+      "model": "kcisdeco:block/framed_window_edge_right",
+      "y": 270
+    },
+    "facing=west,north=true,east=false,south=true,west=false,up=false,down=false": {
+      "model": "kcisdeco:block/framed_window_horizontal",
+      "y": 270
+    },
+    "facing=west,north=false,east=false,south=false,west=false,up=true,down=true": {
+      "model": "kcisdeco:block/framed_window_vertical",
+      "y": 270
+    },
+    "facing=west,north=true,east=false,south=true,west=false,up=true,down=true": {
+      "model": "kcisdeco:block/framed_window_surrounded",
+      "y": 270
+    }
+  }
+}

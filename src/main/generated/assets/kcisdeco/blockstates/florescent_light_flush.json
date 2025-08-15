@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "kcisdeco:block/florescent_light_flush",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "kcisdeco:block/florescent_light_flush"
+    },
+    "facing=south": {
+      "model": "kcisdeco:block/florescent_light_flush",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "kcisdeco:block/florescent_light_flush",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "variants": {
+    "facing=east,left=false,right=false,up=false,down=false": {
+      "model": "kcisdeco:block/whiteboard_disconnected",
+      "y": 90
+    },
+    "facing=east,left=true,right=false,up=false,down=false": {
+      "model": "kcisdeco:block/whiteboard_left",
+      "y": 90
+    },
+    "facing=east,left=false,right=true,up=false,down=false": {
+      "model": "kcisdeco:block/whiteboard_right",
+      "y": 90
+    },
+    "facing=east,left=true,right=true,up=false,down=false": {
+      "model": "kcisdeco:block/whiteboard_horizontal",
+      "y": 90
+    },
+    "facing=east,left=false,right=false,up=true,down=false": {
+      "model": "kcisdeco:block/whiteboard_top",
+      "y": 90
+    },
+    "facing=east,left=false,right=false,up=false,down=true": {
+      "model": "kcisdeco:block/whiteboard_bottom",
+      "y": 90
+    },
+    "facing=east,left=false,right=false,up=true,down=true": {
+      "model": "kcisdeco:block/whiteboard_vertical",
+      "y": 90
+    },
+    "facing=east,left=true,right=false,up=true,down=false": {
+      "model": "kcisdeco:block/whiteboard_left_top",
+      "y": 90
+    },
+    "facing=east,left=false,right=true,up=true,down=false": {
+      "model": "kcisdeco:block/whiteboard_right_top",
+      "y": 90
+    },
+    "facing=east,left=true,right=false,up=false,down=true": {
+      "model": "kcisdeco:block/whiteboard_left_bottom",
+      "y": 90
+    },
+    "facing=east,left=false,right=true,up=false,down=true": {
+      "model": "kcisdeco:block/whiteboard_right_bottom",
+      "y": 90
+    },
+    "facing=east,left=true,right=true,up=true,down=false": {
+      "model": "kcisdeco:block/whiteboard_left_top_right",
+      "y": 90
+    },
+    "facing=east,left=true,right=false,up=true,down=true": {
+      "model": "kcisdeco:block/whiteboard_top_left_bottom",
+      "y": 90
+    },
+    "facing=east,left=true,right=true,up=false,down=true": {
+      "model": "kcisdeco:block/whiteboard_left_bottom_right",
+      "y": 90
+    },
+    "facing=east,left=false,right=true,up=true,down=true": {
+      "model": "kcisdeco:block/whiteboard_top_right_bottom",
+      "y": 90
+    },
+    "facing=east,left=true,right=true,up=true,down=true": {
+      "model": "kcisdeco:block/whiteboard_surrounded",
+      "y": 90
+    },
+    "facing=north,left=false,right=false,up=false,down=false": {
+      "model": "kcisdeco:block/whiteboard_disconnected"
+    },
+    "facing=north,left=true,right=false,up=false,down=false": {
+      "model": "kcisdeco:block/whiteboard_left"
+    },
+    "facing=north,left=false,right=true,up=false,down=false": {
+      "model": "kcisdeco:block/whiteboard_right"
+    },
+    "facing=north,left=true,right=true,up=false,down=false": {
+      "model": "kcisdeco:block/whiteboard_horizontal"
+    },
+    "facing=north,left=false,right=false,up=true,down=false": {
+      "model": "kcisdeco:block/whiteboard_top"
+    },
+    "facing=north,left=false,right=false,up=false,down=true": {
+      "model": "kcisdeco:block/whiteboard_bottom"
+    },
+    "facing=north,left=false,right=false,up=true,down=true": {
+      "model": "kcisdeco:block/whiteboard_vertical"
+    },
+    "facing=north,left=true,right=false,up=true,down=false": {
+      "model": "kcisdeco:block/whiteboard_left_top"
+    },
+    "facing=north,left=false,right=true,up=true,down=false": {
+      "model": "kcisdeco:block/whiteboard_right_top"
+    },
+    "facing=north,left=true,right=false,up=false,down=true": {
+      "model": "kcisdeco:block/whiteboard_left_bottom"
+    },
+    "facing=north,left=false,right=true,up=false,down=true": {
+      "model": "kcisdeco:block/whiteboard_right_bottom"
+    },
+    "facing=north,left=true,right=true,up=true,down=false": {
+      "model": "kcisdeco:block/whiteboard_left_top_right"
+    },
+    "facing=north,left=true,right=false,up=true,down=true": {
+      "model": "kcisdeco:block/whiteboard_top_left_bottom"
+    },
+    "facing=north,left=true,right=true,up=false,down=true": {
+      "model": "kcisdeco:block/whiteboard_left_bottom_right"
+    },
+    "facing=north,left=false,right=true,up=true,down=true": {
+      "model": "kcisdeco:block/whiteboard_top_right_bottom"
+    },
+    "facing=north,left=true,right=true,up=true,down=true": {
+      "model": "kcisdeco:block/whiteboard_surrounded"
+    },
+    "facing=south,left=false,right=false,up=false,down=false": {
+      "model": "kcisdeco:block/whiteboard_disconnected",
+      "y": 180
+    },
+    "facing=south,left=true,right=false,up=false,down=false": {
+      "model": "kcisdeco:block/whiteboard_left",
+      "y": 180
+    },
+    "facing=south,left=false,right=true,up=false,down=false": {
+      "model": "kcisdeco:block/whiteboard_right",
+      "y": 180
+    },
+    "facing=south,left=true,right=true,up=false,down=false": {
+      "model": "kcisdeco:block/whiteboard_horizontal",
+      "y": 180
+    },
+    "facing=south,left=false,right=false,up=true,down=false": {
+      "model": "kcisdeco:block/whiteboard_top",
+      "y": 180
+    },
+    "facing=south,left=false,right=false,up=false,down=true": {
+      "model": "kcisdeco:block/whiteboard_bottom",
+      "y": 180
+    },
+    "facing=south,left=false,right=false,up=true,down=true": {
+      "model": "kcisdeco:block/whiteboard_vertical",
+      "y": 180
+    },
+    "facing=south,left=true,right=false,up=true,down=false": {
+      "model": "kcisdeco:block/whiteboard_left_top",
+      "y": 180
+    },
+    "facing=south,left=false,right=true,up=true,down=false": {
+      "model": "kcisdeco:block/whiteboard_right_top",
+      "y": 180
+    },
+    "facing=south,left=true,right=false,up=false,down=true": {
+      "model": "kcisdeco:block/whiteboard_left_bottom",
+      "y": 180
+    },
+    "facing=south,left=false,right=true,up=false,down=true": {
+      "model": "kcisdeco:block/whiteboard_right_bottom",
+      "y": 180
+    },
+    "facing=south,left=true,right=true,up=true,down=false": {
+      "model": "kcisdeco:block/whiteboard_left_top_right",
+      "y": 180
+    },
+    "facing=south,left=true,right=false,up=true,down=true": {
+      "model": "kcisdeco:block/whiteboard_top_left_bottom",
+      "y": 180
+    },
+    "facing=south,left=true,right=true,up=false,down=true": {
+      "model": "kcisdeco:block/whiteboard_left_bottom_right",
+      "y": 180
+    },
+    "facing=south,left=false,right=true,up=true,down=true": {
+      "model": "kcisdeco:block/whiteboard_top_right_bottom",
+      "y": 180
+    },
+    "facing=south,left=true,right=true,up=true,down=true": {
+      "model": "kcisdeco:block/whiteboard_surrounded",
+      "y": 180
+    },
+    "facing=west,left=false,right=false,up=false,down=false": {
+      "model": "kcisdeco:block/whiteboard_disconnected",
+      "y": 270
+    },
+    "facing=west,left=true,right=false,up=false,down=false": {
+      "model": "kcisdeco:block/whiteboard_left",
+      "y": 270
+    },
+    "facing=west,left=false,right=true,up=false,down=false": {
+      "model": "kcisdeco:block/whiteboard_right",
+      "y": 270
+    },"facing=west,left=true,right=true,up=false,down=false": {
+      "model": "kcisdeco:block/whiteboard_horizontal",
+      "y": 270
+    },
+    "facing=west,left=false,right=false,up=true,down=false": {
+      "model": "kcisdeco:block/whiteboard_top",
+      "y": 270
+    },
+    "facing=west,left=false,right=false,up=false,down=true": {
+      "model": "kcisdeco:block/whiteboard_bottom",
+      "y": 270
+    },
+    "facing=west,left=false,right=false,up=true,down=true": {
+      "model": "kcisdeco:block/whiteboard_vertical",
+      "y": 270
+    },
+    "facing=west,left=true,right=false,up=true,down=false": {
+      "model": "kcisdeco:block/whiteboard_left_top",
+      "y": 270
+    },
+    "facing=west,left=false,right=true,up=true,down=false": {
+      "model": "kcisdeco:block/whiteboard_right_top",
+      "y": 270
+    },
+    "facing=west,left=true,right=false,up=false,down=true": {
+      "model": "kcisdeco:block/whiteboard_left_bottom",
+      "y": 270
+    },
+    "facing=west,left=false,right=true,up=false,down=true": {
+      "model": "kcisdeco:block/whiteboard_right_bottom",
+      "y": 270
+    },
+    "facing=west,left=true,right=true,up=true,down=false": {
+      "model": "kcisdeco:block/whiteboard_left_top_right",
+      "y": 270
+    },
+    "facing=west,left=true,right=false,up=true,down=true": {
+      "model": "kcisdeco:block/whiteboard_top_left_bottom",
+      "y": 270
+    },
+    "facing=west,left=true,right=true,up=false,down=true": {
+      "model": "kcisdeco:block/whiteboard_left_bottom_right",
+      "y": 270
+    },
+    "facing=west,left=false,right=true,up=true,down=true": {
+      "model": "kcisdeco:block/whiteboard_top_right_bottom",
+      "y": 270
+    },
+    "facing=west,left=true,right=true,up=true,down=true": {
+      "model": "kcisdeco:block/whiteboard_surrounded",
+      "y": 270
+    }
+  }
+}

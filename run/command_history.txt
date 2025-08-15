@@ -1,0 +1,19 @@
+/gamemode creative
+/debug
+/help
+/gamemode creative
+/tp Player379
+/tp Player985
+/tp player
+/tp Player391
+/gamemode creative
+/tp Player717
+/tp
+/tp Player405
+/give Player995 kcisdeco:cabinet
+/time set 18000
+/debug
+/debug start
+/debug stop
+/time set 6000
+/give Player202 kcisdeco:classroom_door
