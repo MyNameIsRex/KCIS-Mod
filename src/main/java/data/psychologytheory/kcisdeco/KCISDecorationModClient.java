@@ -26,7 +26,7 @@ public class KCISDecorationModClient implements ClientModInitializer
         BlockRenderLayerMap.putBlock(ModBlocks.FRAMED_WINDOW_DOUBLE_FOGGED, BlockRenderLayer.TRANSLUCENT);
         BlockRenderLayerMap.putBlock(ModBlocks.FRAMED_WINDOW_EXTENDABLE, BlockRenderLayer.CUTOUT);
 
-        BlockRenderLayerMap.putBlock(ModBlocks.CLASSROOM_DOOR, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.WINDOWED_DOOR, BlockRenderLayer.CUTOUT);
 
         EntityRendererRegistry.register(ModEntities.SITTABLE_ENTITY, SittableEntityRenderer::new);
         BlockEntityRendererFactories.register(ModBlockEntities.ROOM_SIGN_BE, RoomSignBlockEntityRenderer::new);

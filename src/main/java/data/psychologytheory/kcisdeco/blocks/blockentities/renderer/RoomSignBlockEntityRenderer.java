@@ -3,24 +3,16 @@ package data.psychologytheory.kcisdeco.blocks.blockentities.renderer;
 import data.psychologytheory.kcisdeco.blocks.ModBlocks;
 import data.psychologytheory.kcisdeco.blocks.RoomSignBlock;
 import data.psychologytheory.kcisdeco.blocks.blockentities.RoomSignBlockEntity;
-import data.psychologytheory.kcisdeco.networking.packets.payload.RoomSignPayload;
-import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.minecraft.block.BlockState;
-import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.font.TextRenderer;
-import net.minecraft.client.gui.DrawContext;
-import net.minecraft.client.render.LightmapTextureManager;
-import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.block.entity.BlockEntityRenderer;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactory;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Colors;
-import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.DyeColor;
 import net.minecraft.util.math.RotationAxis;
 import net.minecraft.util.math.Vec3d;
-import net.minecraft.world.LightType;
-import net.minecraft.world.World;
 
 public class RoomSignBlockEntityRenderer implements BlockEntityRenderer<RoomSignBlockEntity>
 {
@@ -54,48 +46,72 @@ public class RoomSignBlockEntityRenderer implements BlockEntityRenderer<RoomSign
         {
             case SOUTH ->
             {
-                drawRoomNumber(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.025F, -0.525F, 0.57F, 180F);
-                drawRoomNumber(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.2F, -0.525F, 0.43F, 0F);
+                drawRoomNumberFromLeft(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.025F, -0.525F, 0.57F, 180F);
+                drawRoomNumberFromRight(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.025F, -0.525F, 0.43F, 0F);
 
-                drawSubject(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.1F, -0.35F, 0.57F, 180F);
-                drawSubject(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.46F, -0.35F, 0.43F, 0F);
+                drawSubjectLine1(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.1F, -0.395F, 0.57F, 180F);
+                drawSubjectLine1(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.46F, -0.395F, 0.43F, 0F);
 
-                drawTeacherName(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.1F, -0.28F, 0.57F, 180F);
-                drawTeacherName(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.46F, -0.28F, 0.43F, 0F);
+                drawSubjectLine2(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.1F, -0.35F, 0.57F, 180F);
+                drawSubjectLine2(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.46F, -0.35F, 0.43F, 0F);
+
+                drawTeacherNameLine1(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.1F, -0.28F, 0.57F, 180F);
+                drawTeacherNameLine1(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.46F, -0.28F, 0.43F, 0F);
+
+                drawTeacherNameLine2(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.1F, -0.23F, 0.57F, 180F);
+                drawTeacherNameLine2(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.46F, -0.23F, 0.43F, 0F);
             }
             case EAST ->
             {
-                drawRoomNumber(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.57F, -0.525F, 0.975F, 90F);
-                drawRoomNumber(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.43F, -0.525F, 0.8F, 270F);
+                drawRoomNumberFromLeft(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.57F, -0.525F, 0.975F, 90F);
+                drawRoomNumberFromRight(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.43F, -0.525F, 0.975F, 270F);
 
-                drawSubject(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.57F, -0.35F, 0.9F, 90F);
-                drawSubject(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.43F, -0.35F, 0.54F, 270F);
+                drawSubjectLine1(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.57F, -0.395F, 0.9F, 90F);
+                drawSubjectLine1(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.43F, -0.395F, 0.54F, 270F);
 
-                drawTeacherName(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.57F, -0.28F, 0.9F, 90F);
-                drawTeacherName(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.43F, -0.28F, 0.54F, 270F);
+                drawSubjectLine2(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.57F, -0.35F, 0.9F, 90F);
+                drawSubjectLine2(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.43F, -0.35F, 0.54F, 270F);
+
+                drawTeacherNameLine1(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.57F, -0.28F, 0.9F, 90F);
+                drawTeacherNameLine1(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.43F, -0.28F, 0.54F, 270F);
+
+                drawTeacherNameLine2(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.57F, -0.23F, 0.9F, 90F);
+                drawTeacherNameLine2(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.43F, -0.23F, 0.54F, 270F);
             }
             case WEST ->
             {
-                drawRoomNumber(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.43F, -0.525F, 0.025F, 270F);
-                drawRoomNumber(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.57F, -0.525F, 0.2F, 90F);
+                drawRoomNumberFromLeft(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.43F, -0.525F, 0.025F, 270F);
+                drawRoomNumberFromRight(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.57F, -0.525F, 0.025F, 90F);
 
-                drawSubject(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.43F, -0.35F, 0.1F, 270F);
-                drawSubject(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.57F, -0.35F, 0.46F, 90F);
+                drawSubjectLine1(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.43F, -0.395F, 0.1F, 270F);
+                drawSubjectLine1(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.57F, -0.395F, 0.46F, 90F);
 
-                drawTeacherName(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.43F, -0.28F, 0.1F, 270F);
-                drawTeacherName(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.57F, -0.28F, 0.46F, 90F);
+                drawSubjectLine2(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.43F, -0.35F, 0.1F, 270F);
+                drawSubjectLine2(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.57F, -0.35F, 0.46F, 90F);
+
+                drawTeacherNameLine1(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.43F, -0.28F, 0.1F, 270F);
+                drawTeacherNameLine1(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.57F, -0.28F, 0.46F, 90F);
+
+                drawTeacherNameLine2(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.43F, -0.23F, 0.1F, 270F);
+                drawTeacherNameLine2(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.57F, -0.23F, 0.46F, 90F);
             }
 
             default ->
             {
-                drawRoomNumber(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.975F, -0.525F, 0.43F, 0F);
-                drawRoomNumber(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.8F, -0.525F, 0.57F, 180F);
+                drawRoomNumberFromLeft(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.975F, -0.525F, 0.43F, 0F);
+                drawRoomNumberFromRight(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.975F, -0.525F, 0.57F, 180F);
 
-                drawSubject(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.9F, -0.35F, 0.43F, 0F);
-                drawSubject(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.54F, -0.35F, 0.57F, 180F);
+                drawSubjectLine1(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.9F, -0.395F, 0.43F, 0F);
+                drawSubjectLine1(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.54F, -0.395F, 0.57F, 180F);
 
-                drawTeacherName(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.9F, -0.28F, 0.43F, 0F);
-                drawTeacherName(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.54F, -0.28F, 0.57F, 180F);
+                drawSubjectLine2(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.9F, -0.35F, 0.43F, 0F);
+                drawSubjectLine2(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.54F, -0.35F, 0.57F, 180F);
+
+                drawTeacherNameLine1(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.9F, -0.28F, 0.43F, 0F);
+                drawTeacherNameLine1(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.54F, -0.28F, 0.57F, 180F);
+
+                drawTeacherNameLine2(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.9F, -0.23F, 0.43F, 0F);
+                drawTeacherNameLine2(blockState, entity, matrices, textRenderer, vertexConsumers, light, -0.54F, -0.23F, 0.57F, 180F);
             }
         }
     }
@@ -103,23 +119,23 @@ public class RoomSignBlockEntityRenderer implements BlockEntityRenderer<RoomSign
     private static int getRoomNumberColor(BlockState blockState)
     {
         int roomNumberColor = Colors.WHITE;
-        if (blockState.getBlock().equals(ModBlocks.RED_ROOM_SIGN)) roomNumberColor = Colors.RED;
-        if (blockState.getBlock().equals(ModBlocks.ORANGE_ROOM_SIGN)) roomNumberColor = Colors.LIGHT_RED;
-        if (blockState.getBlock().equals(ModBlocks.YELLOW_ROOM_SIGN)) roomNumberColor = Colors.YELLOW;
-        if (blockState.getBlock().equals(ModBlocks.GREEN_ROOM_SIGN)) roomNumberColor = Colors.GREEN;
-        if (blockState.getBlock().equals(ModBlocks.BLUE_ROOM_SIGN)) roomNumberColor = Colors.BLUE;
+        if (blockState.getBlock().equals(ModBlocks.RED_ROOM_SIGN)) roomNumberColor = DyeColor.RED.getSignColor();
+        if (blockState.getBlock().equals(ModBlocks.ORANGE_ROOM_SIGN)) roomNumberColor = DyeColor.ORANGE.getSignColor();
+        if (blockState.getBlock().equals(ModBlocks.YELLOW_ROOM_SIGN)) roomNumberColor = DyeColor.YELLOW.getSignColor();
+        if (blockState.getBlock().equals(ModBlocks.GREEN_ROOM_SIGN)) roomNumberColor = DyeColor.GREEN.getSignColor();
+        if (blockState.getBlock().equals(ModBlocks.BLUE_ROOM_SIGN)) roomNumberColor = DyeColor.CYAN.getSignColor();
         return roomNumberColor;
     }
 
-    private static void drawRoomNumber(BlockState blockState, RoomSignBlockEntity entity,
-                                       MatrixStack matrices,
-                                       TextRenderer textRenderer,
-                                       VertexConsumerProvider vertexConsumers,
-                                       int light,
-                                       float x,
-                                       float y,
-                                       float z,
-                                       float yRotation)
+    private static void drawRoomNumberFromLeft(BlockState blockState, RoomSignBlockEntity entity,
+                                               MatrixStack matrices,
+                                               TextRenderer textRenderer,
+                                               VertexConsumerProvider vertexConsumers,
+                                               int light,
+                                               float x,
+                                               float y,
+                                               float z,
+                                               float yRotation)
     {
         int roomNumberColor = getRoomNumberColor(blockState);
 
@@ -143,7 +159,7 @@ public class RoomSignBlockEntityRenderer implements BlockEntityRenderer<RoomSign
         matrices.pop();
     }
 
-    private static void drawSubject(BlockState blockState, RoomSignBlockEntity entity,
+    private static void drawRoomNumberFromRight(BlockState blockState, RoomSignBlockEntity entity,
                                        MatrixStack matrices,
                                        TextRenderer textRenderer,
                                        VertexConsumerProvider vertexConsumers,
@@ -152,6 +168,38 @@ public class RoomSignBlockEntityRenderer implements BlockEntityRenderer<RoomSign
                                        float y,
                                        float z,
                                        float yRotation)
+    {
+        int roomNumberColor = getRoomNumberColor(blockState);
+
+        matrices.push();
+
+        matrices.multiply(RotationAxis.POSITIVE_Z.rotationDegrees(180));
+        matrices.translate(x, y, z);
+        matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(yRotation));
+        matrices.scale(0.0075F, 0.0075F, 0.0075F);
+
+        textRenderer.draw(entity.getRoomNumber(),
+                -textRenderer.getWidth(entity.getRoomNumber()),
+                0,
+                roomNumberColor,
+                false,
+                matrices.peek().getPositionMatrix(),
+                vertexConsumers,
+                TextRenderer.TextLayerType.NORMAL,
+                0,
+                light);
+        matrices.pop();
+    }
+
+    private static void drawSubjectLine1(BlockState blockState, RoomSignBlockEntity entity,
+                                         MatrixStack matrices,
+                                         TextRenderer textRenderer,
+                                         VertexConsumerProvider vertexConsumers,
+                                         int light,
+                                         float x,
+                                         float y,
+                                         float z,
+                                         float yRotation)
     {
         int subjectColor = Colors.BLACK;
 
@@ -162,7 +210,7 @@ public class RoomSignBlockEntityRenderer implements BlockEntityRenderer<RoomSign
         matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(yRotation));
         matrices.scale(0.0045F, 0.0045F, 0.0045F);
 
-        textRenderer.draw(entity.getSubject(),
+        textRenderer.draw(entity.getSubjectLine1(),
                 0,
                 0,
                 subjectColor,
@@ -175,17 +223,49 @@ public class RoomSignBlockEntityRenderer implements BlockEntityRenderer<RoomSign
         matrices.pop();
     }
 
-    private static void drawTeacherName(BlockState blockState, RoomSignBlockEntity entity,
-                                    MatrixStack matrices,
-                                    TextRenderer textRenderer,
-                                    VertexConsumerProvider vertexConsumers,
-                                    int light,
-                                    float x,
-                                    float y,
-                                    float z,
-                                    float yRotation)
+    private static void drawSubjectLine2(BlockState blockState, RoomSignBlockEntity entity,
+                                         MatrixStack matrices,
+                                         TextRenderer textRenderer,
+                                         VertexConsumerProvider vertexConsumers,
+                                         int light,
+                                         float x,
+                                         float y,
+                                         float z,
+                                         float yRotation)
     {
-        int teacherNameColor = Colors.RED;
+        int subjectColor = Colors.BLACK;
+
+        matrices.push();
+
+        matrices.multiply(RotationAxis.POSITIVE_Z.rotationDegrees(180));
+        matrices.translate(x, y, z);
+        matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(yRotation));
+        matrices.scale(0.0045F, 0.0045F, 0.0045F);
+
+        textRenderer.draw(entity.getSubjectLine2(),
+                0,
+                0,
+                subjectColor,
+                false,
+                matrices.peek().getPositionMatrix(),
+                vertexConsumers,
+                TextRenderer.TextLayerType.NORMAL,
+                0,
+                light);
+        matrices.pop();
+    }
+
+    private static void drawTeacherNameLine1(BlockState blockState, RoomSignBlockEntity entity,
+                                             MatrixStack matrices,
+                                             TextRenderer textRenderer,
+                                             VertexConsumerProvider vertexConsumers,
+                                             int light,
+                                             float x,
+                                             float y,
+                                             float z,
+                                             float yRotation)
+    {
+        int teacherNameColor = DyeColor.RED.getSignColor();
 
         matrices.push();
 
@@ -194,7 +274,39 @@ public class RoomSignBlockEntityRenderer implements BlockEntityRenderer<RoomSign
         matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(yRotation));
         matrices.scale(0.005F, 0.005F, 0.005F);
 
-        textRenderer.draw(entity.getTeacher(),
+        textRenderer.draw(entity.getTeacherLine1(),
+                0,
+                0,
+                teacherNameColor,
+                false,
+                matrices.peek().getPositionMatrix(),
+                vertexConsumers,
+                TextRenderer.TextLayerType.NORMAL,
+                0,
+                light);
+        matrices.pop();
+    }
+
+    private static void drawTeacherNameLine2(BlockState blockState, RoomSignBlockEntity entity,
+                                             MatrixStack matrices,
+                                             TextRenderer textRenderer,
+                                             VertexConsumerProvider vertexConsumers,
+                                             int light,
+                                             float x,
+                                             float y,
+                                             float z,
+                                             float yRotation)
+    {
+        int teacherNameColor = DyeColor.RED.getSignColor();
+
+        matrices.push();
+
+        matrices.multiply(RotationAxis.POSITIVE_Z.rotationDegrees(180));
+        matrices.translate(x, y, z);
+        matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(yRotation));
+        matrices.scale(0.005F, 0.005F, 0.005F);
+
+        textRenderer.draw(entity.getTeacherLine2(),
                 0,
                 0,
                 teacherNameColor,

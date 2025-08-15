@@ -41,7 +41,7 @@ public class ModItemGroups
                        entries.add(ModBlocks.YELLOW_ROOM_SIGN);
                        entries.add(ModBlocks.GREEN_ROOM_SIGN);
                        entries.add(ModBlocks.BLUE_ROOM_SIGN);
-                       entries.add(ModBlocks.CLASSROOM_DOOR);
+                       entries.add(ModBlocks.WINDOWED_DOOR);
                        entries.add(ModBlocks.STUDENT_DESK);
                        entries.add(ModBlocks.STUDENT_SEAT);
                        entries.add(ModBlocks.TEACHER_DESK);

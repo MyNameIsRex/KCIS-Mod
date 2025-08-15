@@ -34,9 +34,9 @@ public class RoomSignScreen extends HandledScreen<RoomSignScreenHandler>
         this.roomSignContents = new TextFieldWidget(this.textRenderer, x + 62, y + 24, 103,12, Text.literal("Room Sign"));
         this.roomSignContents.setDrawsBackground(false);
         this.roomSignContents.setFocusUnlocked(false);
-        this.roomSignContents.setMaxLength(50);
+        this.roomSignContents.setMaxLength(250);
         this.roomSignContents.setChangedListener(this::handleChanges);
-        this.roomSignContents.setText(this.getScreenHandler().getBlockEntity().getRoomNumber() + "|" + this.getScreenHandler().getBlockEntity().getSubject() + "|" + this.getScreenHandler().getBlockEntity().getTeacher());
+        this.roomSignContents.setText(this.getScreenHandler().getBlockEntity().getRoomNumber() + "|" + this.getScreenHandler().getBlockEntity().getSubjectLine1() + "|" + this.getScreenHandler().getBlockEntity().getSubjectLine2() + "|" + this.getScreenHandler().getBlockEntity().getTeacherLine1() + "|" + this.getScreenHandler().getBlockEntity().getTeacherLine2());
 
         this.addDrawableChild(this.roomSignContents);
     }
@@ -48,10 +48,16 @@ public class RoomSignScreen extends HandledScreen<RoomSignScreenHandler>
         this.getScreenHandler().getBlockEntity().setRoomNumber(contents[0]);
 
         if (contents.length == 1) return;
-        this.getScreenHandler().getBlockEntity().setSubject(contents[1]);
+        this.getScreenHandler().getBlockEntity().setSubjectLine1(contents[1]);
 
         if (contents.length == 2) return;
-        this.getScreenHandler().getBlockEntity().setTeacher(contents[2]);
+        this.getScreenHandler().getBlockEntity().setSubjectLine2(contents[2]);
+
+        if (contents.length == 3) return;
+        this.getScreenHandler().getBlockEntity().setTeacherLine1(contents[3]);
+
+        if (contents.length == 4) return;
+        this.getScreenHandler().getBlockEntity().setTeacherLine2(contents[4]);
 
         ClientPlayNetworking.send(new RoomSignPayload(string, this.getScreenHandler().getBlockEntity().getPos()));
     }

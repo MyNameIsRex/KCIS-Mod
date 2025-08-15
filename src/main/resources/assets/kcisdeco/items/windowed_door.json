@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "kcisdeco:block/classroom_door"
+    "model": "kcisdeco:block/windowed_door"
   }
 }

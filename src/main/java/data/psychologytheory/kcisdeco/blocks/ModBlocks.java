@@ -27,7 +27,7 @@ public class ModBlocks
             (properties) -> new RoomSignBlock(properties.nonOpaque()));
 
     //Doors
-    public static final Block CLASSROOM_DOOR = registerBlock("classroom_door",
+    public static final Block WINDOWED_DOOR = registerBlock("windowed_door",
             (properties) -> new CenteredDoorBlock(BlockSetType.WARPED, properties.nonOpaque()));
 
     //Windows
