@@ -13,11 +13,11 @@ import net.minecraft.util.Identifier;
 public class ModItemGroups
 {
 
-   public static final ItemGroup BUILDING_ESSENTIALS_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
-           Identifier.of(KCISDecorationMod.MOD_ID, "building_essentials"),
+   public static final ItemGroup SSENTIALS_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
+           Identifier.of(KCISDecorationMod.MOD_ID, "essentials"),
            FabricItemGroup.builder()
                    .icon(() -> new ItemStack(ModBlocks.FRAMED_WINDOW_DISCONNECTED.asItem()))
-                   .displayName(Text.translatable("itemGroup.kcisdeco.building_essentials"))
+                   .displayName(Text.translatable("itemGroup.kcisdeco.essentials"))
                    .entries(((displayContext, entries) ->
                    {
                       entries.add(ModBlocks.FRAMED_WINDOW_DISCONNECTED);
@@ -25,6 +25,9 @@ public class ModItemGroups
                       entries.add(ModBlocks.FRAMED_WINDOW_DOUBLE);
                       entries.add(ModBlocks.FRAMED_WINDOW_DOUBLE_FOGGED);
                       entries.add(ModBlocks.FRAMED_WINDOW_EXTENDABLE);
+                      entries.add(ModBlocks.SOLID_DOOR);
+                      entries.add(ModBlocks.WINDOWED_DOOR);
+                      entries.add(ModBlocks.GLASSED_DOOR);
                       entries.add(ModBlocks.CEILING_PANEL_BOTTOM);
                       entries.add(ModBlocks.CEILING_PANEL_TOP);
                       entries.add(ModBlocks.FLORESCENT_LIGHT_FLUSH);

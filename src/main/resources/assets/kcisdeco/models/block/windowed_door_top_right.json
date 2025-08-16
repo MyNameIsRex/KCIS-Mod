@@ -3,7 +3,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "minecraft:block/green_terracotta",
-		"2": "kcisdeco:block/classroom_door_top",
+		"2": "kcisdeco:block/windowed_door_top_pane",
 		"particle": "minecraft:block/green_terracotta"
 	},
 	"elements": [

@@ -4,7 +4,7 @@
 	"textures": {
 		"0": "minecraft:block/green_terracotta",
 		"1": "minecraft:block/light_gray_concrete",
-		"3": "kcisdeco:block/classroom_door_bottom",
+		"3": "kcisdeco:block/windowed_door_bottom_pane",
 		"particle": "minecraft:block/green_terracotta"
 	},
 	"elements": [

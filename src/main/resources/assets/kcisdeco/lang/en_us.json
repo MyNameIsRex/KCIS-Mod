@@ -1,5 +1,5 @@
 {
-  "itemGroup.kcisdeco.building_essentials": "KCIS - Building Essentials",
+  "itemGroup.kcisdeco.essentials": "KCIS - Essentials",
   "itemGroup.kcisdeco.classroom": "KCIS - Classroom",
 
   "block.kcisdeco.red_room_sign": "Room Sign - Red",
@@ -16,7 +16,9 @@
 
   "block.kcisdeco.framed_window_extendable": "Framed Window - Extendable",
 
+  "block.kcisdeco.solid_door": "Door - Solid",
   "block.kcisdeco.windowed_door": "Door - Windowed",
+  "block.kcisdeco.glassed_door": "Door - Glassed",
 
   "block.kcisdeco.student_desk": "Desk - Student",
   "block.kcisdeco.student_seat": "Seat - Student",

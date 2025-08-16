@@ -1,0 +1,53 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "minecraft:block/green_terracotta",
+		"1": "minecraft:block/light_gray_concrete",
+		"particle": "minecraft:block/green_terracotta"
+	},
+	"elements": [
+		{
+			"name": "knob_back",
+			"from": [-2, 14, 20.5],
+			"to": [0, 16, 22.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-2, 14, 20]},
+			"faces": {
+				"north": {"uv": [0, 0, 2, 2], "texture": "#1"},
+				"east": {"uv": [0, 0, 2, 2], "texture": "#1"},
+				"south": {"uv": [0, 0, 2, 2], "texture": "#1"},
+				"west": {"uv": [0, 0, 2, 2], "texture": "#1"},
+				"up": {"uv": [0, 0, 2, 2], "texture": "#1"},
+				"down": {"uv": [0, 0, 2, 2], "texture": "#1"}
+			}
+		},
+		{
+			"name": "door_bottom",
+			"from": [0, 0, 7],
+			"to": [2, 16, 23],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-14, 0, 7]},
+			"faces": {
+				"north": {"uv": [0, 0, 2, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 2, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 2, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 2, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "knob_front",
+			"from": [2, 14, 20.5],
+			"to": [4, 16, 22.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [2, 14, 5]},
+			"faces": {
+				"north": {"uv": [0, 0, 2, 2], "texture": "#1"},
+				"east": {"uv": [0, 0, 2, 2], "texture": "#1"},
+				"south": {"uv": [0, 0, 2, 2], "texture": "#1"},
+				"west": {"uv": [0, 0, 2, 2], "texture": "#1"},
+				"up": {"uv": [0, 0, 2, 2], "texture": "#1"},
+				"down": {"uv": [0, 0, 2, 2], "texture": "#1"}
+			}
+		}
+	]
+}
